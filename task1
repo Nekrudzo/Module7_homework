@@ -1,0 +1,17 @@
+const person = {
+ city: "Moscow",
+}
+
+
+const student = Object.create(person);
+
+
+student.ownCity = "Piter";
+
+
+for (let key in person) {
+    if (person.hasOwnProperty(key)) {
+        console.log("Key is " + key + ", value is " + person[key]);
+    }   
+}
+
