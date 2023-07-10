@@ -1,0 +1,15 @@
+const student = {
+    name: "Ivan", 
+    ownCity: "Moscow",
+    age: 21,
+    course: "Frontend"
+  };
+
+function showProps(obj, objKeyName) {
+    return (objKeyName in obj);
+}
+
+console.log(showProps(student, "same")); 
+console.log(showProps(student, "name"));
+console.log(showProps(student, "age")); 
+console.log(showProps(student, "gage")); 
